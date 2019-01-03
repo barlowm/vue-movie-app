@@ -1,0 +1,60 @@
+{
+	"name": "vue-movie-app",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"serve": "vue-cli-service serve",
+		"build": "vue-cli-service build",
+		"lint": "vue-cli-service lint --fix",
+		"test:unit": "vue-cli-service test:unit"
+	},
+	"dependencies": {
+		"animate.css": "^3.7.0",
+		"axios": "^0.18.0",
+		"bootstrap-css-only": "^4.1.3",
+		"hover.css": "^2.3.2",
+		"lodash": "^4.17.11",
+		"moment": "^2.23.0",
+		"vue": "^2.5.17",
+		"vue-carousel": "^0.16.2",
+		"vue-lazyload": "^1.2.6",
+		"vue-router": "^3.0.1",
+		"vue-select": "^2.5.1",
+		"vuex": "^3.0.1"
+	},
+	"devDependencies": {
+		"@babel/plugin-proposal-throw-expressions": "^7.2.0",
+		"@vue/cli-plugin-babel": "^3.0.0",
+		"@vue/cli-plugin-eslint": "^3.0.0",
+		"@vue/cli-plugin-unit-jest": "^3.0.0",
+		"@vue/cli-service": "^3.0.0",
+		"@vue/eslint-config-prettier": "^4.0.0",
+		"@vue/test-utils": "^1.0.0-beta.20",
+		"babel-core": "7.0.0-bridge.0",
+		"babel-eslint": "^10.0.1",
+		"babel-jest": "^23.6.0",
+		"eslint": "^5.8.0",
+		"eslint-plugin-vue": "^5.0.0-0",
+		"husky": "^1.2.1",
+		"lint-staged": "^8.1.0",
+		"node-sass": "^4.11.0",
+		"prettier": "^1.15.3",
+		"pug": "^2.0.3",
+		"pug-plain-loader": "^1.0.0",
+		"sass-loader": "^7.1.0",
+		"vue-template-compiler": "^2.5.17"
+	},
+	"gitHooks": {
+		"pre-commit": "lint-staged"
+	},
+	"lint-staged": {
+		"*.js": [
+			"vue-cli-service lint",
+			"git add"
+		],
+		"*.vue": [
+			"vue-cli-service lint",
+			"git add"
+		]
+	}
+}
