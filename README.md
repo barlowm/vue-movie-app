@@ -1,6 +1,13 @@
 # vue-movie-app
 
 ## Project setup
+
+```
+> npm install
+```
+
+or
+
 ```
 yarn install
 ```
