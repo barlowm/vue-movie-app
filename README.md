@@ -9,7 +9,7 @@
 or
 
 ```
-yarn install
+yarn install <-- This also works...
 ```
 
 ### Compiles and hot-reloads for development
